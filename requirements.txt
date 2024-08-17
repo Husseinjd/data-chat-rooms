@@ -1,0 +1,9 @@
+gradio
+sqlalchemy
+langchain
+langchain
+langchain-community
+psycopg2
+langchain-openai
+python-dotenv
+langchain-ollama

@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:13
+    container_name: bookstore_db
+    environment:
+      POSTGRES_DB: bookstore
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./app/database/init.sql:/docker-entrypoint-initdb.d/init.sql
